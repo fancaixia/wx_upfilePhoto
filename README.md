@@ -5,7 +5,9 @@
 本案例服务端使用node+express简单实现 ，不涉及mysql数据库存储，只为演示，主要偏向与前端页面
 
 
-### 启动node服务后，上传结果可在node_test/upload 查看 **（node启动后记得修改上传地址哦）**
+### 启动node服务后，上传结果可在node_test/upload 查看 
+
+**（node启动后记得修改上传地址哦）**
 
 1  npm/cnpm install   ( 安装依赖 )
 
