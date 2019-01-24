@@ -1,0 +1,29 @@
+    <view class="page-section-title">附件</view>
+            <view class="imgsBox" style='padding:0 30rpx;flex-wrap:wrap;'>
+                  <view class='uploadimgbox' wx:for="{{uploadArr}}" wx:key="item">
+                      <image class='uploadimg' src='{{item.path}}' data-presrc="{{item.path}}" bindtap='previewImg' mode='aspectFill'></image>
+                      <cover-view class='progress' wx:if="{{uploadProgress}}">
+                          {{item.progress}}%
+                      </cover-view>
+                      <cover-view class='delbtn' data-index="{{index}}" data-type="image" bindtap='delFile'>X</cover-view>
+                  </view>
+                  <view class='uploadimgbox' wx:for="{{upVideoArr}}" wx:key="item">
+                      <video class='uploadimg' src="{{item.tempFilePath}}"  controls ></video>
+                    <cover-view class='progress' wx:if="{{uploadProgress}}">
+                          {{item.progress}}%
+                      </cover-view>
+                      <cover-view class='delbtn' data-index="{{index}}" data-type="video" bindtap='delFile'>X</cover-view>
+                  </view>
+                  
+                  <view class='uploadimgbox' wx:if="{{uploadBtn}}">
+                      <image class='uploadbtn' bindtap='uploadFiles' src='../../images/activity_photo.png'></image>
+                  </view>
+                  
+            </view>
+
+      <button class="btn" bindtap='saveFiles'>上传</button>
+
+
+
+
+
