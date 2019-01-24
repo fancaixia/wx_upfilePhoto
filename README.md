@@ -28,12 +28,12 @@ data ：{
 
 
 
-点击添加图片触发  wx.chooseImage ，选择完成后将已选文件列表存入数组 this.data. upImgArr
+1. 点击添加图片触发  wx.chooseImage ，选择完成后将已选文件列表存入数组 this.data. upImgArr
 
-wx.chooseImage 之前判断是否存在已选图片，存在的话重新计算可选数量（ maxUploadLen - upImgArr.length）
+2. wx.chooseImage 之前判断是否存在已选图片，存在的话重新计算可选数量（ maxUploadLen - upImgArr.length）
 
-删除已选图片后，更新数组upImgArr  重新计算可选数量（ maxUploadLen - upImgArr.length）
+3. 删除已选图片后，更新数组upImgArr  重新计算可选数量（ maxUploadLen - upImgArr.length）
 
-点击上传按钮时判断upImgArr是否为空  不为空则继续上传
+4. 点击上传按钮时判断upImgArr是否为空  不为空则继续上传
 
-上传完成后清空upImgArr
+5. 上传完成后清空upImgArr
