@@ -7,11 +7,13 @@
 
 ### 启动node服务后，上传结果可在node_test/upload 查看 
 
-**（node启动后记得修改上传地址哦）**
+**（node启动后记得修改上传地址为本机IP）**
 
-1  npm/cnpm install   ( 安装依赖 )
+1. cd / node_test
 
-2 node app  （启动服务）
+2. npm/cnpm install   ( 安装依赖 )
+
+3. node app  （启动服务）
 
 
 ### 本案例简单实现思路
