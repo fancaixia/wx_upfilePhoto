@@ -7,7 +7,7 @@
 
 ### 启动node服务后，上传结果可在node_test/upload 查看 
 
-**（node启动后记得修改上传地址为本机IP）**
+- cd / wx_upload_photo / utils / activity_api  更改ip地址
 
 1. cd / node_test
 
